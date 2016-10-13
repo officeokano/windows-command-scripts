@@ -1,0 +1,1 @@
+@powershell start cmd -ArgumentList '/k cd /d %CD%' -Verb runas
