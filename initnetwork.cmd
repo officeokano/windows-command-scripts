@@ -5,7 +5,7 @@ if %errorlevel% == 0 goto :main
 exit /b
 :main
 
-﻿netsh winsock reset
+netsh winsock reset
 netsh int ip reset c:\resetlog.txt
 
 ipconfig /release
