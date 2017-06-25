@@ -1,5 +1,10 @@
 @echo off
 
+call chkadmin.cmd
+if %errorlevel% == 0 goto :main
+exit /b
+:main
+
 ﻿netsh winsock reset
 netsh int ip reset c:\resetlog.txt
 

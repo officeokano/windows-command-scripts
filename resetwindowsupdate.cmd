@@ -1,4 +1,8 @@
 @echo off
+call chkadmin.cmd
+if %errorlevel% == 0 goto :main
+exit /b
+:main
 net stop bits
 net stop wuauserv
 net stop appidsvc
